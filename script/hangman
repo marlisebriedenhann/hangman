@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+#frozen_string_literal: true
+
+# Start a game of Hangman 
+# Display concealed word
+# TBD
+
+require './lib/hangman'
+
+word = "supercalifragilisticexpialidocious"
+
+puts "---------------Welcome to Hangman---------------\n"
+
+subject = Hangman.new(new_word: word)
+
+puts "\n\nWord [ " + subject.masked_word + "]\n\n"
